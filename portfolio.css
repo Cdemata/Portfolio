@@ -1,17 +1,25 @@
 :root {
-  --primary-color: #d482a7;
-  --secondary-color: #e7d7c9;
+  --primary-color: #e5c1cd;
+  --secondary-color: #b6b4c2;
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Lora", serif;
 }
 
 .hero {
-  background-color: var(--secondary-color);
+  background-image: url("images/background2.png");
+  background-image: cover;
   text-align: center;
   padding: 160px 0;
-  color: var(--primary-color);
+  color: black;
+  font-family: var(--secondary-font);
+}
+
+.hero h1 {
+  font-family: var(--primary-font);
 }
 
 .btn-branding {
-  background-color: var(--primary-color);
+  background-color: #f3dbcf;
   border-radius: 4px;
   color: var(--secondary-color);
   padding: 15px 20px;
