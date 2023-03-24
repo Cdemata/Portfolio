@@ -1,13 +1,23 @@
 :root {
-  --primary-color: #e5c1cd;
+  --primary-color: #f9deeb;
   --secondary-color: #b6b4c2;
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Lora", serif;
 }
 
+body {
+  background-color: #fff7e1;
+}
+
+p {
+  font-family: var(--secondary-font);
+  font-size: 16px;
+}
+
 .hero {
   background-image: url("images/background2.png");
-  background-image: cover;
+  background-repeat: no-repeat;
+  background-size: 100%;
   text-align: center;
   padding: 160px 0;
   color: black;
@@ -16,13 +26,75 @@
 
 .hero h1 {
   font-family: var(--primary-font);
+  font-size: 64px;
+}
+
+.hero h2 {
+  font-size: 24px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+#homepic {
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
 }
 
 .btn-branding {
-  background-color: #f3dbcf;
+  background-color: var(--primary-color);
   border-radius: 4px;
   color: var(--secondary-color);
   padding: 15px 20px;
   line-height: 27px;
   font-size: 18px;
+}
+
+.homeh2 {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-size: 20px;
+}
+
+.homepara {
+  text-align: center;
+  font-family: var(--secondary-font);
+  font-size: 14px;
+}
+
+.homebutton {
+  background-color: var(--primary-color);
+  border-radius: 3px;
+  display: block;
+  text-align: center;
+  margin: 0 130px;
+  font-size: 16px;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 50px;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero h2 {
+    font-size: 13px;
+  }
+
+  .hero p {
+    font-size: 10px;
+  }
+
+  .btn-branding {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+
+  #homepic {
+    max-width: 200px;
+  }
 }
