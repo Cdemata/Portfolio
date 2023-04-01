@@ -5,6 +5,13 @@
   --secondary-font: "Lora", serif;
 }
 
+.container {
+  max-width: 100%;
+}
+
+.indexpic {
+  max-width: 50%;
+}
 body {
   background-color: #ececee;
 }
@@ -14,10 +21,30 @@ p {
   font-size: 16px;
 }
 
+.logo {
+  max-width: 120px;
+}
+
+nav {
+  padding: 5px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 62px;
+}
+
 .hero {
-  background-image: url("images/background2.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(248, 219, 219) 0%,
+    rgb(229, 248, 250) 90%
+  );
   text-align: center;
   padding: 160px 0;
   color: black;
@@ -97,4 +124,66 @@ p {
   #homepic {
     max-width: 200px;
   }
+}
+
+#aboutpic {
+  max-width: 400px;
+  margin-left: 80px;
+}
+
+.about-info h1 {
+  font-size: 64px;
+  line-height: 80x;
+  font-family: var(--secondary-font);
+}
+
+.about-info h2 {
+  font-size: 20px;
+  font-family: var(--primary-font);
+}
+
+.about-info p {
+  font-size: 16px;
+  font-family: var(--primary-font);
+}
+
+.content {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(248, 219, 219) 0%,
+    rgb(229, 248, 250) 90%
+  );
+  max-width: 100%;
+  padding: 160px 20px;
+}
+
+@media (max-width: 900px) {
+  #aboutpic {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .about-info h1 {
+    font-size: 30px;
+  }
+
+  .about-info h2 {
+    font-size: 17px;
+  }
+
+  .about-info p {
+    font-size: 15px;
+  }
+}
+
+#portfolio-pic {
+  max-width: 70%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
 }
