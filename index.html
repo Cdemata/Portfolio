@@ -34,25 +34,46 @@
     <link rel="stylesheet" type="text/css" href="portfolio.css" />
   </head>
   <body>
-    <div class="container section-fill fixed-top pb-3">
+    <div class="container section-fill p-3 fixed-top">
       <nav class="d-flex justify-content-between">
-        <img src="Images/chibijoon.png" class="logo" alt="Chibi Joon logo" />
+        <a href="index.html">
+          <img
+            src="Images/chibijoon.png"
+            class="logo d-none d-md-block"
+            alt="Chibi Joon logo"
+          />
+          <img
+            src="Images/sparkles.png"
+            class="small-logo d-block d-md-none"
+            alt="Chibi Joon logo"
+          />
+        </a>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Work</li>
-          <li>Contact</li>
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="products.html">Products</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
         </ul>
       </nav>
     </div>
 
     <div class="hero">
-      <p>✨ hello, I am</p>
       <img src="Images/chibijoon.png" class="indexpic" alt="Chibi Joon logo" />
-      <h2>Passionate Creator based in Los Angeles</h2>
-      <a href="#" class="btn btn-branding mt-3">Contact Me</a>
+      <br />
+      <a href="products.html" class="btn btn-branding mt-3">Shop Now</a>
     </div>
-    <div class="home-container mt-5">
+
+    <p class="featured text-center m-4">✨ Featured Products ✨</p>
+
+    <div class="home-container m-5">
       <div class="row">
         <div class="col-sm-4">
           <img
@@ -64,13 +85,12 @@
 
           <h2 class="homeh2">Custom Nails</h2>
           <p class="homepara">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
           <a href="#" class="btn homebutton mb-4"> Order Now </a>
         </div>
 
-        <div class="col-sm-4">
+        <div class="col-sm-4 container">
           <img
             src="images/omamori.png"
             id="homepic"
@@ -79,8 +99,7 @@
           />
           <h2 class="homeh2">Resin Omamori</h2>
           <p class="homepara">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
           <a href="#" class="btn homebutton mb-4"> Order Now </a>
         </div>
@@ -94,12 +113,35 @@
           />
           <h2 class="homeh2">Floral Coasters</h2>
           <p class="homepara">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
-            quia, dignissimos nam ratione veniam quibusdam porro.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
           <a href="#" class="btn homebutton mb-4"> Order Now </a>
         </div>
       </div>
+
+      <footer>
+        <div class="d-flex justify-content-center">
+          <a href="mailto:chattystyle@gmail.com" class="footer-link mb-3"
+            >chattystyle@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a href="https://www.etsy.com/shop/ChibiJoon">
+            <i class="fa-brands fa-etsy"></i>
+          </a>
+          <a href="https://www.instagram.com/chibijoon/">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@chibijoon">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <div class="credit text-center mb-2">
+      This website was coded by Chanelle Demata and is
+      <a href="https://github.com/Cdemata/Portfolio">open-sourced</a>
     </div>
   </body>
 </html>
